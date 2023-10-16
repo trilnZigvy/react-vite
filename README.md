@@ -77,21 +77,21 @@ src/
 ├── store.ts
 ├── ...
 ```
-CSS Methodology: BEM (Block Element Modifier)
-What is BEM?
+## CSS Methodology: BEM (Block Element Modifier)
+- What is BEM?
 BEM (Block Element Modifier) is a naming convention for classes in HTML and CSS. It helps create reusable and maintainable styles by providing a clear structure and naming conventions.
 
 
-Why BEM in Our Project
+- Why BEM in Our Project
 Explain why you've chosen to use BEM in this project. For example, mention its benefits for maintainability, readability, and scalability.
 
-BEM Naming Convention
+- BEM Naming Convention
 In this project, we adhere to the BEM naming convention to ensure consistency and clarity in our CSS code. Here's a quick overview of how BEM naming works:
 
-Block: The main, standalone component that encapsulates an element. This corresponds to a React component in our project.
-Element: A part of a block that has no meaning on its own. Elements are typically nested within blocks.
-Modifier: A class that modifies the block or element, adding variations in appearance or behavior.
-Example of BEM Naming
+- Block: The main, standalone component that encapsulates an element. This corresponds to a React component in our project.
+- Element: A part of a block that has no meaning on its own. Elements are typically nested within blocks.
+- Modifier: A class that modifies the block or element, adding variations in appearance or behavior.
+## Example of BEM Naming
 Here's an example of how we use BEM in our project:
 
 ```html
@@ -100,6 +100,6 @@ Here's an example of how we use BEM in our project:
     <div class="block__element--modifier"></div>
 </div>
 ```
-block is the main component.
-block__element is an element inside the block.
-block__element--modifier is an element with a modifier applied.
+- block is the main component.
+- block__element is an element inside the block.
+- block__element--modifier is an element with a modifier applied.
