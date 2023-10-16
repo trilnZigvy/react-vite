@@ -10,14 +10,8 @@
     "preview": "vite preview",
     "lint:fix": "eslint --fix src --ext ts,tsx",
     "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-    "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-    "lint-staged": {
-      "*.ts": [
-        "npm run lint",
-        "npm run format",
-        "git add ."
-      ]
-    }
+    "format": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -40,5 +34,12 @@
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint",
+      "npm run format",
+      "git add ."
+    ]
   }
 }
